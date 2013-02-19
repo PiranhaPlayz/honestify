@@ -1,71 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Honestify by bryanstedman</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Honesitfy: keeping the web honest</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
+    <div class="main" role="main">
+      <h1>hon&middot;est&middot;if&middot;y <span>|ˈänistifī|</span></h1>
+      <p>
+        Honestify is an extension for chrome that is keeping the web honest by replacing common words and phrases with what they <em>really</em> mean.
+      </p>
 
-        <header>
-          <h1>Honestify</h1>
-          <h2>A browser extension to keep the web honest</h2>
-        </header>
+      <p>
+        <a class="btn" href="https://chrome.google.com/webstore/detail/honestify/fhchnfppdjlbehjggobhaeickacadjhi">download honestify</a>
+      </p>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/bryanstedman/honestify/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/bryanstedman/honestify/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/bryanstedman/honestify" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
 
-        <hr>
+      <p>
+        You can also use honestify as a bookmarklet by simply dragging this to your bookmarks bar →  
+        <a class="btn" href="javascript:(function()%7Bfunction%20callback()%7B(function(%24)%7Bvar%20jQuery%3D%24%3B%24.getJSON('https%3A%2F%2Frawgithub.com%2Fbryanstedman%2Fhonestify%2Fmaster%2Fphrases.json'%2C%20function(data)%20%7Bfunction%20htmlreplace(a%2C%20element)%20%7Bif%20(!element)%20element%20%3D%20document.body%3Bvar%20nodes%20%3D%20element.childNodes%3Bfor%20(var%20n%3D0%3B%20n%3Cnodes.length%3B%20n%2B%2B)%20%7Bif%20(nodes%5Bn%5D.nodeType%20%3D%3D%20Node.TEXT_NODE)%20%7Bfor%20(key%20in%20a)%20%7Bvar%20r%20%3D%20new%20RegExp(key%2C%20'gi')%3Bnodes%5Bn%5D.textContent%20%3D%20nodes%5Bn%5D.textContent.replace(r%2C%20a%5Bkey%5D)%3B%7D%7D%20else%20%7Bhtmlreplace(a%2C%20nodes%5Bn%5D)%3B%7D%7D%7Dhtmlreplace(data)%3B%7D)%7D)(jQuery.noConflict(true))%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F1.7.1%2Fjquery.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()">honestify</a>
+      </p>
 
-        <section id="main_content">
-          <h3>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <footer>
-          Honestify is maintained by <a href="https://github.com/bryanstedman">bryanstedman</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
     </div>
+    <footer>
+      Honestify is made with love by <a href="http://bryanstedman.com">Bryan Stedman</a> and you can contribute on <a href="https://github.com/bryanstedman/honestify">github</a>
+    </footer>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script> -->
   </body>
 </html>
