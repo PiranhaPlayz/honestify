@@ -1,4 +1,7 @@
 @import normalize
+@import fonts
+
+$alt: #e65454
 
 *
 	box-sizing: border-box
@@ -17,7 +20,7 @@ h1
 .main
 	width: 100% 
 	max-width: 37em 
-	padding: 1em
+	padding: 1em 1em 0 1em
 	margin: 0 auto
 	font-size: 1.2em
 
@@ -26,6 +29,31 @@ footer
 	color: #888
 
 .alt, a
-	color: #e65454
+	color: $alt
 
+.btn 
+	background: $alt
+	border-radius: 3px
+	color: white 
+	text-decoration: none
+	&:hover
+		opacity: .9
 
+.largebtn
+	@extend .btn
+	padding: .3em .8em
+
+.smallbtn
+	@extend .btn 
+	padding: .1em .5em
+	font-size: .9em
+
+.icon-box-add:before
+	padding-right: .8em
+
+.bookmarklet
+	font-size: .8em
+	background: #ddd
+	padding: 1em
+	border-radius: 5px
+	margin: 4em 0 1em 0
