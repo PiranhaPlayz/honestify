@@ -7,7 +7,7 @@ $.getJSON('https://raw.github.com/bryanstedman/honestify/master/phrases.json', f
     for (var n=0; n<nodes.length; n++) {
       if (nodes[n].nodeType == Node.TEXT_NODE) {
         for (key in a) {
-          var r = new RegExp(key, 'gi');
+          var r = new RegExp('\\b'+key+'\\b', 'gi');
           nodes[n].textContent = nodes[n].textContent.replace(r, a[key]);
         }
       } else {
