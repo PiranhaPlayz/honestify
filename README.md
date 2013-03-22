@@ -8,7 +8,7 @@ The exact phrases are in [phrases.json](phrases.json). Things are pretty empty i
  * **v0.2.0** - 2013-03-21
    - Fix RegExp bug that replaced partial words if they matched a search
   
- * **v0.1.0** - 2013-02-20 
+ * **v0.1.0** - 2013-02-18 
    - Initial Release. 
 
 ## Author
